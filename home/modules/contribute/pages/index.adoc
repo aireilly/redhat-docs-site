@@ -1,15 +1,15 @@
-= Contributing to the Couchbase Documentation
+= Contributing to the Red Hat Documentation
 // Settings
 :hide-uri-scheme:
 // URLs
 :url-issues: https://issues.couchbase.com
 :url-issues-doc: {url-issues}/browse/DOC
 
-Thank you for taking the time and effort to improve the Couchbase documentation.
+Thank you for taking the time and effort to improve the Red Hat documentation.
 
 == Reporting Bugs and Requesting Enhancements
 
-All bugs and enhancements for the Couchbase documentation are tracked using the {url-issues-doc}[DOC project issue board^].
+All bugs and enhancements for the Red Hat documentation are tracked using the {url-issues-doc}[DOC project issue board^].
 If you find an error, or see room for improvement on a page, please don't keep it to yourself.
 Even if you don't plan to make the change yourself, we would still like to know what it is!
 Raise a DOC bug and someone on the team will look at it.
@@ -23,7 +23,7 @@ For example, "`Instructions for disabling THP on RHEL/CentOS 7 and later do not 
 
 *Describe the problem or enhancement in full*.
 For any problem, describe it in detail, including any expected results and how they differ from the real results.
-Remember, the documentation team are not experts in every aspect of Couchbase.
+Remember, the documentation team are not experts in every aspect of Red Hat.
 For that reason, be as descriptive as possible, providing the correct text or command.
 This drastically reduces the time it takes to resolve the issue.
 {url-issues-doc}-2056[DOC-2056^] is an example of a well-written DOC bug which allowed the assigned writer to make the necessary changes quickly.

@@ -1,15 +1,15 @@
-= Couchbase Documentation Site
+= Red Hat Documentation Site
 :idprefix:
 :idseparator: -
 // Settings:
 :hide-uri-scheme:
 // URLs:
-:url-docs: https://docs.couchbase.com
+:url-docs: https://docs.redhat.com
 :url-contribute: {url-docs}/home/contribute/
-:url-org: https://github.com/couchbase
+:url-org: https://github.com/redhat
 :url-ui: {url-org}/docs-ui
 
-This is the Antora playbook project (aka site build) for the Couchbase documentation site published at {url-docs}.
+This is the Antora playbook project (aka site build) for a Red Hat documentation site. Based on https://github.com/couchbase/docs-site
 
 == Prerequisites
 
@@ -28,7 +28,7 @@ The production site is built for each change to the master branch.
 A deploy preview of the site is also published for each pull request, though without any of the private content sources (unless the pull request comes from a trusted source).
 The configuration for the deploy preview build is located in the [.path]_netlify_ folder.
 
-If you're building a local version of the Couchbase docs for testing, and want a reduced-scope playbook that just builds Server docs with the components that you are editing locally, https://github.com/couchbase/docs-site/blob/master/home/modules/contribute/examples/local-staging-antora-playbook.yml[here is an SDK-based playbook file] -- use it as a basis for your own local playbook.
+If you're building a local version of the Red Hat docs for testing, and want a reduced-scope playbook that just builds Server docs with the components that you are editing locally, https://github.com/redhat/docs-site/blob/master/home/modules/contribute/examples/local-staging-antora-playbook.yml[here is an SDK-based playbook file] -- use it as a basis for your own local playbook.
 
 == Home Docs Component
 
@@ -37,7 +37,7 @@ All other content is sourced from separate repositories and branches.
 
 == Custom Asciidoctor Extensions
 
-The custom extensions in the [.path]_lib/_ directory process the manpage macro (Couchbase CLI and Backup components), Swagger UI macro, and multi-row table headers.
+The custom extensions in the [.path]_lib/_ directory process the manpage macro (Red Hat CLI and Backup components), Swagger UI macro, and multi-row table headers.
 
 == File Watcher and LiveReload
 
@@ -97,10 +97,10 @@ Here's an excerpt from that report:
 ....
 [03:39:51.926] ERROR (asciidoctor): target of xref not found: csharp:gs-prereqs.adoc
     file: modules/csharp/pages/querybuilder.adoc
-    source: https://github.com/couchbaselabs/docs-couchbase-lite (refname: release/3.0)
+    source: https://github.com/redhatlabs/docs-redhat-lite (refname: release/3.0)
 [03:26:50.579] ERROR (asciidoctor): target of xref not found: server:fts:fts-using-analyzers.adoc#token-filters
     file: docs/public/modules/clusters/pages/search-service/create-full-text-indexes.adoc
-    source: https://github.com/couchbasecloud/couchbase-cloud (refname: main, start path: docs/public)
+    source: https://github.com/redhatcloud/redhat-cloud (refname: main, start path: docs/public)
 ....
 
 Each message shows the repository source, the refname, and the path from the root of that repository.
