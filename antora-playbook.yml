@@ -9,16 +9,12 @@ antora:
 site:
   title: OpenShift Container Platform Documentation
   url: https://docs.openshift.com
-  start_page: home::index.adoc
+  start_page: openshift-container-platform::welcome/index.adoc
   robots: allow
   keys:
     google_analytics: TBD
     nav_groups: |
       [
-      { "title": "OpenShift", "startPage": "openshift-container-platform::welcome/index.adoc", "components": ["openshift-container-platform"] },
-      { "title": "OpenShift on AWS", "startPage": "openshift-container-platform::welcome/index.adoc", "components": ["openshift-container-platform"] },
-      { "title": "OpenShift on Microsoft Azure", "startPage": "openshift-container-platform::welcome/index.adoc", "components": ["openshift-container-platform"] },
-      { "title": "OpenShift on Bare Metal", "startPage": "openshift-container-platform::welcome/index.adoc", "components": ["openshift-container-platform"] }
       ]
 git:
   ensure_git_suffix: false
@@ -33,8 +29,8 @@ content:
       branches: HEAD
       start_path: home
     - url: https://github.com/aireilly/openshift-docs-antora
-      branches: [release/4.10]
-      start_path: docs
+      branches:
+        - main
 asciidoc:
   attributes:
     site-navigation-data-path: _/js/site-navigation-data.js
@@ -67,6 +63,6 @@ asciidoc:
     - asciidoctor-external-callout
 ui:
   bundle:
-    url: /home/aireilly/redhat-antora-ui/build/ui-bundle.zip
+    url: https://github.com/aireilly/redhat-antora-ui/releases/download/2/ui-bundle.zip
 output:
   dir: ./public

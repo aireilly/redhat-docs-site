@@ -47,7 +47,17 @@ To use the script, run the following.
 
 . Install dependencies.
 
- $ npm ci
+[source,terminal]
+----
+$ npm ci
+----
+
+Run a basic build:
+
+[source,terminal]
+----
+$ npx antora --fetch local-antora-playbook.yml
+----
 
 . If you're using Chrome, install the LiveReload https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en[chrome extension].
 Firefox has built-in support for LiveReload.
