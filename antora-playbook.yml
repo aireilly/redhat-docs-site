@@ -5,7 +5,6 @@ antora:
   extensions:
     - '@antora/site-generator-ms'
     - ./lib/embargo.js
-    - '@antora/lunr-extension'
 site:
   title: OpenShift Container Platform Documentation
   url: https://docs.openshift.com
